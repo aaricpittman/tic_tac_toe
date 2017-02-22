@@ -22,3 +22,17 @@ If [available in Hex](https://hex.pm/docs/publish), the package can be installed
     end
     ```
 
+Development
+===========
+
+## Docker
+
+**To Run Test:**
+```
+docker-compose run --rm app mix test
+```
+
+**Run App**
+```
+docker-compose run --rm app mix test
+```
