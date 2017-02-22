@@ -3,3 +3,5 @@ services:
   app:
     build: .
     image: elixir_tic_tac_toe
+    volumes:
+      - .:/app
