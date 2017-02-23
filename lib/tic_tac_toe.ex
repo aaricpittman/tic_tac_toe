@@ -10,6 +10,7 @@ defmodule TicTacToe do
       [3,5,7]]
   end
 
+  def move(move_list, move) when not move in (1..9), do: {:error, move_list, "Invalid position"}
   def move(move_list, move) when is_integer(move) do
     cond do
       Enum.member?(move_list, move) ->
